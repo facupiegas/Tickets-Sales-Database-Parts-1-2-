@@ -1,0 +1,155 @@
+/*
+     script SQL para crear las tablas para poder realizar la segunda parte del obligatorio
+*/
+
+
+
+create table Pais (
+
+    IdPais decimal not null Primary Key,
+
+    NombrePais varchar(50)
+
+);
+
+
+create table Pasajero (
+
+    IdPasajero decimal not null Primary Key,
+
+    NombrePasajero varchar(60),
+
+    APaternoPasajero varchar(60),
+
+    AMaternoPasajero varchar(60),
+
+    TipoDocumentoPasajero char(3),
+
+    NumeroDocumentoPasajero decimal,
+
+    FechaNacimientoPasajero date,
+
+    EmailPasajero varchar(60),
+
+    PasswordPasajero character(40),
+
+    IdPais decimal not null foreign key references Pais(IdPais)
+
+);
+
+
+create table PasajeroTelefono (
+
+    IdPasajero decimal not null foreign key references Pasajero (IdPasajero),
+
+    TelefonoPasajero varchar(60),
+
+    Primary Key (IdPasajero, TelefonoPasajero)
+
+);
+
+
+create table Terminal (
+
+    IdTerminal decimal not null Primary Key,
+
+    NombreTerminal varchar(60),
+
+    IdPais decimal not null foreign key references Pais(IdPais)
+
+);
+
+
+create table Tren (
+
+    IdTren decimal not null Primary Key,
+
+    TipoTren varchar(60),
+
+    CapacidadTren integer,
+
+    MarcaTren varchar(80)
+
+);
+
+
+create table Asiento (
+
+    IdTren decimal not null foreign key references Tren (IdTren),
+
+    FilaAsiento integer,
+
+    LetraAsiento char(2),
+
+    Primary Key (IdTren,FilaAsiento,LetraAsiento)
+
+);
+
+
+create table Viaje (
+
+    IdTerminalOrigenViaje decimal not null foreign key references Terminal (IdTerminal),
+
+    IdTerminalDestinoViaje decimal not null foreign key references Terminal (IdTerminal),
+
+    FechaHoraViaje datetime,
+
+    Importe float,
+
+    IdTren decimal foreign key references Tren (IdTren),
+
+    IdViaje decimal not null Primary Key
+
+);
+
+
+create table Boleto (
+
+    IdBoleto integer identity(1,1) primary key, 
+   
+    IdPasajero decimal not null foreign key references Pasajero (IdPasajero),
+
+    IdTren decimal not null foreign key references Tren (IdTren),
+
+    FilaAsiento integer,
+
+    LetraAsiento char(2),
+
+    FechaCompraBoleto date,
+
+    IdViaje decimal not null foreign key references Viaje (IdViaje),
+
+    Foreign key (IdTren,FilaAsiento,LetraAsiento) references Asiento(IdTren,FilaAsiento,LetraAsiento)
+
+);
+
+
+create table PasajeroVIP (
+
+    IdPasajero decimal not null foreign key references Pasajero (IdPasajero),
+
+    PorcentajePasajeroVIP float,
+
+    Primary Key (IdPasajero)
+
+);
+
+
+create table Beneficio (
+
+    IdBeneficio decimal not null Primary Key,
+
+    BeneficioNombre varchar(80)
+
+);
+
+
+create table PasajeroVIPBeneficio (
+
+    IdPasajero decimal not null foreign key references Pasajero (IdPasajero),
+
+    IdBeneficio decimal not null foreign key references Beneficio (IdBeneficio),
+
+    Primary Key (IdPasajero, IdBeneficio)
+
+);

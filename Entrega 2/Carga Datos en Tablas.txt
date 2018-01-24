@@ -1,0 +1,309 @@
+--Carga datos tabla PAIS
+begin
+	INSERT INTO pais VALUES (1,'Uruguay');
+	INSERT INTO pais VALUES (2,'Brasil');
+	INSERT INTO pais VALUES (3,'Argentina');
+	INSERT INTO pais VALUES (4,'Chile');
+	INSERT INTO pais VALUES (5,'Paraguay');
+end
+
+--Carga datos tabla Tren
+begin 
+  INSERT INTO tren VALUES (1,'grande',25,'Volvo');
+  INSERT INTO tren VALUES (2,'grande',24,'AUDI');
+  INSERT INTO tren VALUES (3,'mediano',18,'FIAT');
+  INSERT INTO tren VALUES (4,'mediano',16,'PEUGEOT');
+  INSERT INTO tren VALUES (5,'pequeño',12,'SCANIA');
+  INSERT INTO tren VALUES (6,'pequeño',10,'VW');
+  INSERT INTO tren VALUES (7,'grande',22,'VW');
+  INSERT INTO tren VALUES (8,'grande',23,'VW');
+end
+
+--Carga datos tabla Asiento
+begin 
+	--asientos tren 1
+  INSERT INTO asiento VALUES (1,1,'A');
+  INSERT INTO asiento VALUES (1,2,'A');
+  INSERT INTO asiento VALUES (1,3,'A');
+  INSERT INTO asiento VALUES (1,4,'A');
+  INSERT INTO asiento VALUES (1,5,'A');
+  INSERT INTO asiento VALUES (1,6,'B');
+  INSERT INTO asiento VALUES (1,7,'B');
+  INSERT INTO asiento VALUES (1,8,'B');
+  INSERT INTO asiento VALUES (1,9,'B');
+  INSERT INTO asiento VALUES (1,10,'B');
+  INSERT INTO asiento VALUES (1,11,'C');
+  INSERT INTO asiento VALUES (1,12,'C');
+  INSERT INTO asiento VALUES (1,13,'C');
+  INSERT INTO asiento VALUES (1,14,'C');
+  INSERT INTO asiento VALUES (1,15,'C');
+  INSERT INTO asiento VALUES (1,16,'D');
+  INSERT INTO asiento VALUES (1,17,'D');
+  INSERT INTO asiento VALUES (1,18,'D');
+  INSERT INTO asiento VALUES (1,19,'D');
+  INSERT INTO asiento VALUES (1,20,'D');
+  INSERT INTO asiento VALUES (1,21,'E');
+  INSERT INTO asiento VALUES (1,22,'E');
+  INSERT INTO asiento VALUES (1,23,'E');
+  INSERT INTO asiento VALUES (1,24,'E');
+  INSERT INTO asiento VALUES (1,25,'E');
+
+  	--asientos tren 2
+  INSERT INTO asiento VALUES (2,1,'A');
+  INSERT INTO asiento VALUES (2,2,'A');
+  INSERT INTO asiento VALUES (2,3,'A');
+  INSERT INTO asiento VALUES (2,4,'A');
+  INSERT INTO asiento VALUES (2,5,'A');
+  INSERT INTO asiento VALUES (2,6,'A');
+  INSERT INTO asiento VALUES (2,7,'A');
+  INSERT INTO asiento VALUES (2,8,'A');
+  INSERT INTO asiento VALUES (2,9,'C');
+  INSERT INTO asiento VALUES (2,10,'C');
+  INSERT INTO asiento VALUES (2,11,'C');
+  INSERT INTO asiento VALUES (2,12,'C');
+  INSERT INTO asiento VALUES (2,13,'C');
+  INSERT INTO asiento VALUES (2,14,'C');
+  INSERT INTO asiento VALUES (2,15,'C');
+  INSERT INTO asiento VALUES (2,16,'C');
+  INSERT INTO asiento VALUES (2,17,'D');
+  INSERT INTO asiento VALUES (2,18,'D');
+  INSERT INTO asiento VALUES (2,19,'D');
+  INSERT INTO asiento VALUES (2,20,'D');
+  INSERT INTO asiento VALUES (2,21,'D');
+  INSERT INTO asiento VALUES (2,22,'D');
+  INSERT INTO asiento VALUES (2,23,'D');
+  INSERT INTO asiento VALUES (2,24,'D');
+
+   	--asientos tren 3
+  INSERT INTO asiento VALUES (3,1,'A');
+  INSERT INTO asiento VALUES (3,2,'A');
+  INSERT INTO asiento VALUES (3,3,'A');
+  INSERT INTO asiento VALUES (3,4,'A');
+  INSERT INTO asiento VALUES (3,5,'A');
+  INSERT INTO asiento VALUES (3,6,'A');
+  INSERT INTO asiento VALUES (3,7,'B');
+  INSERT INTO asiento VALUES (3,8,'B');
+  INSERT INTO asiento VALUES (3,9,'B');
+  INSERT INTO asiento VALUES (3,10,'B');
+  INSERT INTO asiento VALUES (3,11,'B');
+  INSERT INTO asiento VALUES (3,12,'B');
+  INSERT INTO asiento VALUES (3,13,'C');
+  INSERT INTO asiento VALUES (3,14,'C');
+  INSERT INTO asiento VALUES (3,15,'C');
+  INSERT INTO asiento VALUES (3,16,'C');
+  INSERT INTO asiento VALUES (3,17,'C');
+  INSERT INTO asiento VALUES (3,18,'C');
+
+     	--asientos tren 4
+  INSERT INTO asiento VALUES (4,1,'A');
+  INSERT INTO asiento VALUES (4,2,'A');
+  INSERT INTO asiento VALUES (4,3,'A');
+  INSERT INTO asiento VALUES (4,4,'A');
+  INSERT INTO asiento VALUES (4,5,'B');
+  INSERT INTO asiento VALUES (4,6,'B');
+  INSERT INTO asiento VALUES (4,7,'B');
+  INSERT INTO asiento VALUES (4,8,'B');
+  INSERT INTO asiento VALUES (4,9,'C');
+  INSERT INTO asiento VALUES (4,10,'C');
+  INSERT INTO asiento VALUES (4,11,'C');
+  INSERT INTO asiento VALUES (4,12,'C');
+  INSERT INTO asiento VALUES (4,13,'D');
+  INSERT INTO asiento VALUES (4,14,'D');
+  INSERT INTO asiento VALUES (4,15,'D');
+  INSERT INTO asiento VALUES (4,16,'D');
+  
+       	--asientos tren 5
+  INSERT INTO asiento VALUES (5,1,'A');
+  INSERT INTO asiento VALUES (5,2,'A');
+  INSERT INTO asiento VALUES (5,3,'A');
+  INSERT INTO asiento VALUES (5,4,'B');
+  INSERT INTO asiento VALUES (5,5,'B');
+  INSERT INTO asiento VALUES (5,6,'B');
+  INSERT INTO asiento VALUES (5,7,'C');
+  INSERT INTO asiento VALUES (5,8,'C');
+  INSERT INTO asiento VALUES (5,9,'C');
+  INSERT INTO asiento VALUES (5,10,'D');
+  INSERT INTO asiento VALUES (5,11,'D');
+  INSERT INTO asiento VALUES (5,12,'D');
+
+      	--asientos tren 6
+  INSERT INTO asiento VALUES (6,1,'A');
+  INSERT INTO asiento VALUES (6,2,'A');
+  INSERT INTO asiento VALUES (6,3,'A');
+  INSERT INTO asiento VALUES (6,4,'A');
+  INSERT INTO asiento VALUES (6,5,'A');
+  INSERT INTO asiento VALUES (6,6,'B');
+  INSERT INTO asiento VALUES (6,7,'B');
+  INSERT INTO asiento VALUES (6,8,'B');
+  INSERT INTO asiento VALUES (6,9,'B');
+  INSERT INTO asiento VALUES (6,10,'B');
+
+  --asientos tren 7
+  INSERT INTO asiento VALUES (7,1,'A');
+  INSERT INTO asiento VALUES (7,2,'A');
+  INSERT INTO asiento VALUES (7,3,'A');
+  INSERT INTO asiento VALUES (7,4,'A');
+  INSERT INTO asiento VALUES (7,5,'A');
+  INSERT INTO asiento VALUES (7,6,'B');
+  INSERT INTO asiento VALUES (7,7,'B');
+  INSERT INTO asiento VALUES (7,8,'B');
+  INSERT INTO asiento VALUES (7,9,'B');
+  INSERT INTO asiento VALUES (7,10,'B');
+  INSERT INTO asiento VALUES (7,11,'C');
+  INSERT INTO asiento VALUES (7,12,'C');
+  INSERT INTO asiento VALUES (7,13,'C');
+  INSERT INTO asiento VALUES (7,14,'C');
+  INSERT INTO asiento VALUES (7,15,'C');
+  INSERT INTO asiento VALUES (7,16,'D');
+  INSERT INTO asiento VALUES (7,17,'D');
+  INSERT INTO asiento VALUES (7,18,'D');
+  INSERT INTO asiento VALUES (7,19,'D');
+  INSERT INTO asiento VALUES (7,20,'D');
+  INSERT INTO asiento VALUES (7,21,'E');
+  INSERT INTO asiento VALUES (7,22,'E');
+
+--asientos tren 8
+  INSERT INTO asiento VALUES (8,1,'A');
+  INSERT INTO asiento VALUES (8,2,'A');
+  INSERT INTO asiento VALUES (8,3,'A');
+  INSERT INTO asiento VALUES (8,4,'A');
+  INSERT INTO asiento VALUES (8,5,'A');
+  INSERT INTO asiento VALUES (8,6,'B');
+  INSERT INTO asiento VALUES (8,7,'B');
+  INSERT INTO asiento VALUES (8,8,'B');
+  INSERT INTO asiento VALUES (8,9,'B');
+  INSERT INTO asiento VALUES (8,10,'B');
+  INSERT INTO asiento VALUES (8,11,'C');
+  INSERT INTO asiento VALUES (8,12,'C');
+  INSERT INTO asiento VALUES (8,13,'C');
+  INSERT INTO asiento VALUES (8,14,'C');
+  INSERT INTO asiento VALUES (8,15,'C');
+  INSERT INTO asiento VALUES (8,16,'D');
+  INSERT INTO asiento VALUES (8,17,'D');
+  INSERT INTO asiento VALUES (8,18,'D');
+  INSERT INTO asiento VALUES (8,19,'D');
+  INSERT INTO asiento VALUES (8,20,'D');
+  INSERT INTO asiento VALUES (8,21,'E');
+  INSERT INTO asiento VALUES (8,22,'E');
+  INSERT INTO asiento VALUES (8,23,'E');
+end
+
+--Carga datos tabla Terminal
+begin 
+	INSERT INTO terminal VALUES (1,'Term1',1);
+	INSERT INTO terminal VALUES (2,'Term2',1);
+	INSERT INTO terminal VALUES (3,'Term3',2);
+	INSERT INTO terminal VALUES (4,'Term4',2);
+	INSERT INTO terminal VALUES (5,'Term5',3);
+	INSERT INTO terminal VALUES (6,'Term6',3);
+	INSERT INTO terminal VALUES (7,'Term7',4);
+	INSERT INTO terminal VALUES (8,'Term8',5);
+end
+
+--Carga datos tabla Viaje
+begin 
+	INSERT INTO viaje VALUES (1,2,'28-01-2017' ,500,1,1);
+	INSERT INTO viaje VALUES (1,3,'24-01-2017' ,600,1,2);
+	INSERT INTO viaje VALUES (1,4,'23-01-2017' ,700,2,3);
+	INSERT INTO viaje VALUES (2,1,'22-01-2017' ,1000,2,4);
+	INSERT INTO viaje VALUES (2,3,'21-01-2017' ,1100,3,5);
+	INSERT INTO viaje VALUES (2,4,'20-01-2017' ,1200,3,6);
+	INSERT INTO viaje VALUES (2,5,'19-01-2017' ,1500,4,7);
+	INSERT INTO viaje VALUES (3,1,'18-01-2017' ,700,4,8);
+	INSERT INTO viaje VALUES (3,2,'17-01-2017' ,800,5,9);
+	INSERT INTO viaje VALUES (3,4,'16-01-2017' ,900,5,10);
+	INSERT INTO viaje VALUES (3,5,'15-01-2017' ,1100,6,11);
+	INSERT INTO viaje VALUES (4,1,'14-01-2017' ,1500,6,12);
+	INSERT INTO viaje VALUES (4,2,'13-01-2017' ,1700,1,13);
+	INSERT INTO viaje VALUES (4,3,'12-01-2017' ,1800,2,14);
+	INSERT INTO viaje VALUES (4,5,'11-01-2017' ,2000,3,15);
+	INSERT INTO viaje VALUES (4,5,'11-01-2017' ,1350,3,7256441);
+end
+
+--Carga datos tabla Pasajero
+begin 
+	INSERT INTO pasajero VALUES (1,'Marty','McFly','Sanders','CI',45867946,'23-09-1992','MartyMcFly@gmail.com','Marty123',1);
+	INSERT INTO pasajero VALUES (2,'Nicole','Neuman','Gomez','CI',11111111,'15-10-1999','Nicole@gmail.com','Nicole123',3);
+	INSERT INTO pasajero VALUES (3,'Diego','Maradona','Gimenez','CI',22222222,'05-02-1988','Diego@gmail.com','Diego123',2);
+	INSERT INTO pasajero VALUES (4,'Marcos','Sandy','Mac','CI',33333333,'22-05-1965','Marcos@gmail.com','Marcos123',5);
+	INSERT INTO pasajero VALUES (5,'Pablo','Escobar','Gravidia','CI',44444444,'29-04-1970','Pablo@gmail.com','Pablo123',5);
+	INSERT INTO pasajero VALUES (6,'Ernesto','Perez','Clemente','CI',55555555,'12-04-1975','Ernesto@gmail.com','Ernesto123',1);
+	INSERT INTO pasajero VALUES (7,'Susana','Horia','Ensalada','CI',66666666,'30-01-1995','Susana@gmail.com','Susana123',4);
+	INSERT INTO pasajero VALUES (8,'Andres','Rodriguez','Comun','CI',77777777,'16-04-1982','Andres@gmail.com','Andres123',2);
+	INSERT INTO pasajero VALUES (9,'Federico','Moreira','Regia','CI',88888888,'15-11-1951','Federico@gmail.com','Federico123',4);
+	INSERT INTO pasajero VALUES (10,'Jack','Daniels','Rocks','CI',99999999,'03-12-1940','Jack@gmail.com','Jack123',2);
+end
+
+--Carga datos tabla Telefono Pasajero
+begin
+	INSERT INTO pasajerotelefono VALUES (1,'099778899');
+	INSERT INTO pasajerotelefono VALUES (2,'099221144');
+	INSERT INTO pasajerotelefono VALUES (3,'099664477');
+	INSERT INTO pasajerotelefono VALUES (4,'099665511');
+	INSERT INTO pasajerotelefono VALUES (5,'099784563');
+	INSERT INTO pasajerotelefono VALUES (6,'099324577');
+	INSERT INTO pasajerotelefono VALUES (7,'099874411');
+	INSERT INTO pasajerotelefono VALUES (8,'099654238');
+	INSERT INTO pasajerotelefono VALUES (9,'099821647');
+	INSERT INTO pasajerotelefono VALUES (10,'099764458');
+end
+
+--Carga datos tabla Beneficio
+begin 
+	INSERT INTO beneficio VALUES (1,'Benef1');
+	INSERT INTO beneficio VALUES (2,'Benef2');
+	INSERT INTO beneficio VALUES (3,'Benef3');
+	INSERT INTO beneficio VALUES (4,'Benef4');
+	INSERT INTO beneficio VALUES (5,'Benef5');
+	INSERT INTO beneficio VALUES (6,'Benef6');
+	INSERT INTO beneficio VALUES (7,'Benef7');
+	INSERT INTO beneficio VALUES (8,'Benef8');
+end
+
+--Carga datos tabla Beneficio VIP
+begin
+	INSERT INTO pasajerovipbeneficio VALUES (1,5);
+	INSERT INTO pasajerovipbeneficio VALUES (1,7);
+	INSERT INTO pasajerovipbeneficio VALUES (8,3);
+	INSERT INTO pasajerovipbeneficio VALUES (5,1);
+	INSERT INTO pasajerovipbeneficio VALUES (5,8);
+	INSERT INTO pasajerovipbeneficio VALUES (1,8);
+	INSERT INTO pasajerovipbeneficio VALUES (8,4);
+	INSERT INTO pasajerovipbeneficio VALUES (8,5);
+end
+
+--Carga datos tabla Pasajero VIP
+begin 
+	INSERT INTO pasajerovip VALUES (1,15.4);
+	INSERT INTO pasajerovip VALUES (8,20);
+	INSERT INTO pasajerovip VALUES (5,11.9);
+end
+
+--Carga datos tabla Boleto
+begin 
+	INSERT INTO boleto VALUES (1,1,15,'C','07-06-2017',13);
+	INSERT INTO boleto VALUES (1,3,5,'A','08-04-2017',6);
+	INSERT INTO boleto VALUES (1,3,6,'A','08-04-2017',6);
+	INSERT INTO boleto VALUES (1,3,10,'B','01-11-2017',15);
+	INSERT INTO boleto VALUES (1,2,17,'D','07-06-2017',4);
+	INSERT INTO boleto VALUES (2,6,8,'B','07-02-2017',11);
+	INSERT INTO boleto VALUES (4,3,14,'C','07-06-2017',5);
+	INSERT INTO boleto VALUES (7,5,5,'B','15-10-2017',10);
+	INSERT INTO boleto VALUES (3,1,23,'E','19-08-2017',13);
+	INSERT INTO boleto VALUES (3,1,23,'E','15-04-2017',7256441);
+	INSERT INTO boleto VALUES (3,1,23,'E','12-1-2017',7256441);
+	INSERT INTO boleto VALUES (3,1,23,'E','19-05-2017',7256441);
+	INSERT INTO boleto VALUES (3,1,23,'E','07-06-2017',7256441);
+end
+
+
+
+--//TRUNCATE table boleto;// sirve para vaciar una tabla y para volver a setear a sus valores iniciales las variables identity
+
+
+
+
+
+
+
+
